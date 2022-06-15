@@ -17,7 +17,7 @@
 
 <body>
   <div id="corps_page">
-    <header>
+    <header id="accueil">
       <div id="banniere_titre">
         <div id="logo">
           <h1>Krampouez</h1>
@@ -26,17 +26,18 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">Recettes</a></li>
-          <li><a href="#">Outils</a></li>
-          <li><a href="#">Me contacter</a></li>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#recettes">Recettes</a></li>
+          <li><a href="#aide">Aide mémoire</a></li>
+          <li><a href="#contact">Me contacter</a></li>
         </ul>
       </nav>
     </header>
     <!-- section -->
     <section id="main">
+
       <div id="contenair">
-        <article>
+        <article id="recettes">
           <header class="header_article">
             <div class="tete_article">
               <h2>Crèpes Rhum et Vanille</h2>
@@ -216,7 +217,7 @@
       </aside>
     </section>
     <section id="outils">
-      <h2>Boite à outils</h2>
+      <h2 id="aide">Aide mémoire</h2>
       <div id="outils_div">
         <div id="tableau_gluten">
           <p>Liste des farine avec et sans gluten</p>
@@ -262,7 +263,7 @@
   </section>
   <!-- formulaire -->
   <section id="form">
-    <h2>Me contacter</h2>
+    <h2 id="contact">Me contacter</h2>
 
     <div id="formulaire">
       <form method="post" action="traitement.php">
@@ -294,20 +295,21 @@
         <p>
           Site réalisé par NJ_Web 2022
         </p>
-        <p><span class="iconify" data-icon="akar-icons:facebook-fill"></span></p><a href="#" target="_blank">
-
-        </a>
-        <p><span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span></p><a href="#" target="_blank">
-
-        </a>
+        <p><a class="a-icone" href="#" target="_blank"><span class="iconify"
+              data-icon="akar-icons:facebook-fill"></span>
+          </a></p>
+        <p><a class="a-icone" href="https://www.linkedin.com/in/angie-pons-1078431aa/" target="_blank"><span
+              class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
+          </a></p>
 
       </div>
       <div id="footer_autres">
 
-        <p><a href="#" target="_blank"><span class="iconify" data-icon="icon-park-solid:other"></span> Maquillage de
+        <p><a href="https://elishaya13.github.io/SiteMaquillageResponsive/" target="_blank"><span class="iconify"
+              data-icon="icon-park-solid:other"></span> Maquillage de
             fête en Vendée</p></a>
-        <p><a href="#" target="_blank"><span class="iconify" data-icon="icon-park-solid:other"></span> Tous en scène
-            avec FFXIV</p></a>
+        <p><a href="https://elishaya13.github.io/ExositeFF14/" target="_blank"><span class="iconify"
+              data-icon="icon-park-solid:other"></span> Evénements sur scène FFXIV</a></p>
       </div>
     </div>
   </footer>
