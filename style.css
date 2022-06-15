@@ -215,10 +215,12 @@ fieldset {
   border-radius: 10px;
 }
 #genre {
+  margin: 4px 0 4px 0;
   width: 6em;
 }
 #nom {
   width: 12em;
+  margin: 4px 0 2px 0;
 }
 textarea {
   resize: none;
