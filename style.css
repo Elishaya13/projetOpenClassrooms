@@ -16,7 +16,7 @@ h1 {
 }
 h2 {
   font-family: 'Noto Sans Mono', monospace;
-  color: black;
+  color: rgb(125, 93, 67);
   text-align: center;
   font-size: 1em;
 }
@@ -33,7 +33,9 @@ p,
 }
 a {
   text-decoration: none;
+  color: black;
 }
+
 a:link {
   color: black;
 }
@@ -168,10 +170,14 @@ aside img {
   #outils_div {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 }
+
 /*---tableau*/
+#tableau_gluten p {
+  text-align: center;
+}
 table {
   border-collapse: collapse;
   width: 30em;
@@ -188,7 +194,85 @@ th {
   border: 1px solid black;
   text-align: center;
 }
+/*tableau responsive 500px*/
+@media screen and (max-width: 500px) {
+  table {
+    width: 20em;
+  }
+}
 /*---video*/
 iframe {
   box-shadow: 10px 11px 20px 0px rgba(0, 0, 0, 0.75);
+}
+/*formulaire*/
+#form {
+  width: 40%;
+  margin: auto;
+  margin-top: 10em;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+#genre {
+  width: 6em;
+}
+#nom {
+  width: 12em;
+}
+textarea {
+  resize: none;
+  height: 10em;
+}
+#mail {
+  margin-bottom: 1em;
+}
+input:last-of-type {
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+/*footer*/
+footer {
+  margin-top: 5em;
+  border-top: 1px solid black;
+}
+#contenair_footer {
+  display: flex;
+  justify-content: space-between;
+}
+#footer {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-between;
+}
+#footer p {
+  padding: 0 10px 0 10px;
+  font-size: 0.8em;
+}
+#footer_autres {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#footer_autres p {
+  margin: 2px;
+  font-size: 0.8em;
+}
+@media screen and (max-width: 800px) {
+  #footer {
+    width: 45%;
+  }
+  #footer_autres {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1085px) {
+  #footer p,
+  #footer_autres p {
+    font-size: 0.6em;
+  }
 }

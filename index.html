@@ -262,43 +262,54 @@
   </section>
   <!-- formulaire -->
   <section id="form">
-    <p><strong>Me contacter</strong></p>
+    <h2>Me contacter</h2>
+
     <div id="formulaire">
       <form method="post" action="traitement.php">
-        <br>
-        <label for="genre">Vous êtes ?</label></br>
-        <select name="genre" id="genre">
-          <option value="feminin">Madame</option>
-          <option value="masculin">Monsieur</option>
-        </select>
-        <label for="nom">Votre Nom :</label>
-        <input type="text" name="nom" id="nom" required />
-        <br />
-        <label for="question">Votre question :</label>
-        <textarea name="question" id="question"></textarea>
-        <label for="mail">Entrez votre e-mail</label>
-        <input type="email" name="mail" id="mail" required />
-        <input type="submit" value="Envoyer" />
+        <fieldset>
+          <legend>Me contacter</legend>
+          <label for="genre">Vous êtes ?</label></br>
+          <select name="genre" id="genre">
+            <option value="feminin">Madame</option>
+            <option value="masculin">Monsieur</option>
+          </select>
+          <label for="nom">Votre Nom :</label>
+          <input type="text" name="nom" id="nom" required />
+          <br />
+          <label for="question">Votre question :</label>
+          <textarea name="question" id="question"></textarea>
+          <label for="mail">Entrez votre e-mail</label>
+          <input type="email" name="mail" id="mail" required />
+          <input type="submit" value="Envoyer" />
 
-
+        </fieldset>
       </form>
     </div>
 
   </section>
   <!-- footer -->
   <footer>
-    <ul>
-      <li><a href="#" target="_blank">
-          Ma page facebook
-        </a></li>
-      <li><a href="#" target="_blank">
-          Ma chaine Youtube
-        </a></li>
-    </ul>
-    <p>
-      Site réalisé par NJ_Web 2022<br />
+    <div id="contenair_footer">
+      <div id="footer">
+        <p>
+          Site réalisé par NJ_Web 2022
+        </p>
+        <p><span class="iconify" data-icon="akar-icons:facebook-fill"></span></p><a href="#" target="_blank">
 
-    </p>
+        </a>
+        <p><span class="iconify" data-icon="akar-icons:linkedin-box-fill"></span></p><a href="#" target="_blank">
+
+        </a>
+
+      </div>
+      <div id="footer_autres">
+
+        <p><a href="#" target="_blank"><span class="iconify" data-icon="icon-park-solid:other"></span> Maquillage de
+            fête en Vendée</p></a>
+        <p><a href="#" target="_blank"><span class="iconify" data-icon="icon-park-solid:other"></span> Tous en scène
+            avec FFXIV</p></a>
+      </div>
+    </div>
   </footer>
   </div>
 </body>
