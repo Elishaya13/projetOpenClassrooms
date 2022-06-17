@@ -1,52 +1,28 @@
-/* font-family: 'Lobster', cursive;
-
-font-family: 'Noto Sans', sans-serif;
-font-family: 'Noto Sans JP', sans-serif;
-font-family: 'Noto Sans Mono', monospace; 
-color: rgb(125, 93, 67);*/
-/*reglages*/
+/************ reglages globale *************/
 body {
   background-color: #fefee2;
 }
+
 h1 {
   font-family: 'Lobster', cursive;
   text-align: center;
 }
+
 h2 {
   font-family: 'Noto Sans Mono', monospace;
   color: rgb(125, 93, 67);
   text-align: center;
   font-size: 1em;
 }
+
 #logo h2 {
   font-size: 1.5em;
 }
-p,
-.preparation {
+
+p {
   font-family: 'Noto Sans JP', sans-serif;
 }
-#corps_page {
-  width: 85%;
-  margin: auto;
-}
-img {
-  box-shadow: 10px 11px 20px 0px rgba(0, 0, 0, 0.75);
-}
-/*nav*/
-nav {
-  width: 90%;
-  margin: auto;
-  background: radial-gradient(closest-side, #cfa510ea, #f6efde, #fefee2);
-  margin-top: 2%;
-  transition: 0.6s;
-}
-nav ul {
-  display: flex;
-  justify-content: space-around;
-}
-nav li {
-  list-style-type: none;
-}
+
 a {
   text-decoration: none;
   color: black;
@@ -55,60 +31,91 @@ a {
 a:link {
   color: black;
 }
+
 a:hover {
   color: rgba(38, 36, 34, 0.968);
   text-decoration: underline;
 }
-/*corps*/
-#main {
+
+#bloc_page {
+  width: 85%;
+  margin: auto;
+  /*pour centrer sur la page*/
+}
+
+img,
+iframe {
+  box-shadow: 10px 11px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+/*************************** NAV ********************************************/
+nav {
+  width: 90%;
+  margin: auto;
+  background: radial-gradient(closest-side, #cfa510ea, #f6efde, #fefee2);
+  margin-top: 2%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+/*************************** SECTION MAIN ***************************/
+
+#section_main {
   display: flex;
   padding-top: 5%;
 }
-#contenair {
+
+#wrapper_articles {
   display: flex;
   flex-direction: column;
   flex: 3;
 }
 
-/*article et aside*/
-
 article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 3em;
-  margin-bottom: 3em;
+  margin: 0em 3em 3em 0em;
   border: 1px solid black;
   box-shadow: 10px 11px 20px 0px rgba(0, 0, 0, 0.75);
   border-bottom-right-radius: 50px;
 }
+
 article h2 {
   text-decoration: underline black;
 }
-article h3 {
-  margin-bottom: -0.5em;
-}
-.tete_article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .contenu_article {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 1.5em;
 }
-.ingredients_contenair {
+
+.header_article {
   align-items: center;
   display: flex;
+  /*pour aligner l'image d'illustration et la partie ingredients*/
 }
-.img_ing {
+
+.header_article img {
+  width: 100%;
+}
+
+.img_container {
   width: 100%;
   flex: 1.5;
   margin-left: 3em;
   margin-top: 2em;
 }
+
 .ingredients {
   display: flex;
   flex-direction: column;
@@ -116,18 +123,19 @@ article h3 {
   flex: 2;
   margin-top: 1em;
 }
+
 .ingredients p:first-child {
-  color: rgb(13, 12, 12);
   margin-bottom: -1em;
+  /*pour resserer le paragraphe ingredients avec le paragraphe suivant*/
 }
+
 .preparation {
   width: 90%;
   text-align: justify;
+  margin-top: -1em;
 }
 
-.ingredients_contenair img {
-  width: 100%;
-}
+/*************** aside ********/
 
 aside {
   flex: 1;
@@ -135,38 +143,42 @@ aside {
   border: 1px solid black;
   box-shadow: 5px 5px 20px black;
 }
+
 aside p {
   font-size: 13px;
   margin: 2em 1em 2em 1em;
 }
+
 aside img {
   margin-left: 0.5em;
   border: 1px solid rgb(8, 8, 8);
   box-shadow: none;
 }
+
 /*aside responsive*/
 @media screen and (max-width: 800px) {
   aside {
     display: none;
   }
 }
-/*outils*/
-#outils {
+
+/*--------------------------section aides memoire----------------*/
+
+#bloc_aides h2 {
   margin-top: 5em;
-}
-#outils h2 {
   text-decoration: underline black;
 }
 
-#outils_div {
+#aides_memoire {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-/*outils responsive*/
+
+/*aide memoire responsive*/
 @media screen and (max-width: 1200px) {
-  #outils_div {
+  #aides_memoire {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,72 +189,84 @@ aside img {
 #tableau_gluten p {
   text-align: center;
 }
+
 table {
   border-collapse: collapse;
   width: 30em;
   box-shadow: 10px 11px 20px 0px rgba(0, 0, 0, 0.75);
 }
+
 tr {
   height: 1.5em;
 }
+
 caption {
   background-color: rgb(255, 106, 0);
 }
+
 td,
 th {
   border: 1px solid black;
   text-align: center;
 }
+
 /*tableau responsive 500px*/
 @media screen and (max-width: 500px) {
   table {
     width: 20em;
   }
 }
-/*---video*/
-iframe {
-  box-shadow: 10px 11px 20px 0px rgba(0, 0, 0, 0.75);
-}
-/*formulaire*/
-#form {
+
+/******************** section formulaire *****************************/
+#section_form {
   width: 40%;
   margin: auto;
   margin-top: 10em;
 }
+
 fieldset {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
 }
+
 #genre {
   margin: 4px 0 4px 0;
   width: 6em;
 }
+
 #nom {
   width: 12em;
   margin: 4px 0 2px 0;
 }
+
 textarea {
   resize: none;
   height: 10em;
 }
+
 #mail {
   margin-bottom: 1em;
 }
+
 input:last-of-type {
   border-radius: 10px;
   width: 50%;
   margin: auto;
 }
-/*footer*/
+
+/************************* footer ***********************************/
 footer {
   margin-top: 5em;
   border-top: 1px solid black;
+  /*bordure et marge pour creer un espacement entre le formulaire et le footer*/
 }
-#contenair_footer {
+
+#container_footer {
   display: flex;
   justify-content: space-between;
 }
+
 #footer {
   display: flex;
   flex-direction: row;
@@ -255,38 +279,46 @@ footer {
   font-size: 0.8em;
   transition: 0.6s;
 }
+
 #footer p:hover {
   transform: scale(1.2);
 }
+
 .a-icone:hover {
   color: rgb(125, 93, 67);
 }
-#footer_autres {
+
+#footer_sites {
   width: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-top: 0.3em;
 }
-#footer_autres p {
+
+#footer_sites p {
   margin: 2px;
   font-size: 0.8em;
 }
-#footer_autres a:hover {
+
+#footer_sites a:hover {
   color: rgb(125, 93, 67);
   text-decoration: none;
 }
+
 @media screen and (max-width: 800px) {
   #footer {
     width: 45%;
   }
-  #footer_autres {
+
+  #footer_sites {
     width: 40%;
   }
 }
+
 @media screen and (max-width: 1085px) {
   #footer p,
-  #footer_autres p {
+  #footer_sites p {
     font-size: 0.7em;
   }
 }

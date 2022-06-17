@@ -5,25 +5,23 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Lobster&family=Noto+Sans&family=Noto+Sans+JP&family=Noto+Sans+Mono:wght@300&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
   <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-  <link rel="shortcut icon" href="./images/icone_crepe.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/icone_crepe.png" type="image/x-icon" />
   <title>Krampouez</title>
 </head>
 
 <body>
-  <div id="corps_page">
-    <header id="accueil">
-      <div id="banniere_titre">
-        <div id="logo">
-          <h1>Krampouez</h1>
-          <h2>1, 2, 3 crèpes !</h2>
-        </div>
+  <div id="bloc_page">
+    <header>
+      <div id="logo">
+        <h1>Krampouez</h1>
+        <h2>1, 2, 3 crèpes !</h2>
       </div>
       <nav>
         <ul>
@@ -34,21 +32,23 @@
         </ul>
       </nav>
     </header>
-    <!-- section -->
-    <div id="main">
 
-      <div id="contenair">
+    <!-------------- section main------------------------------->
+
+    <!-- wrapper pour englober les articles avec le aside pour les aligner avec flexbox  -->
+    <section id="section_main">
+      <!-- wrapper pour englober les articles et les aligner horizontalement avec flexbox  -->
+      <div id="wrapper_articles">
         <article id="recettes">
-          <header class="header_article">
-            <div class="tete_article">
-              <h2>Crèpes Rhum et Vanille</h2>
-            </div>
-          </header>
+          <h2>Crèpes Rhum et Vanille</h2>
+
           <div class="contenu_article">
-            <div class="ingredients_contenair">
-              <div class="img_ing"><img src="./images/crepes.png" alt="recette de crepes classique"></div>
+            <div class="header_article">
+              <div class="img_container">
+                <img src="./images/crepes.png" alt="recette de crepes classique" />
+              </div>
               <div class="ingredients">
-                <p><strong>Ingrédients</strong>
+                <p><strong>Ingrédients</strong></p>
                 <p>Pour 25 crèpes environ</p>
                 <ul>
                   <li>5 oeufs</li>
@@ -57,31 +57,32 @@
                   <li>60 g de beurre fondu</li>
                   <li>5 Cl de rhum</li>
                   <li>3 CaS de sucre</li>
-                  <li>1 CaS d'arome de vanille </li>
+                  <li>1 CaS d'arome de vanille</li>
                 </ul>
               </div>
             </div>
             <h3>Préparation</h3>
-            <p class="preparation">Dans un saladier à l'aide d'une cuillère en bois ou dans le bol d'un robot, mélanger
-              la farine avec le sucre puis ajouter les oeufs progressivement un à un.<br>
-              Ajouter le lait petit à petit en mélangeant et veillant à ne laisser aucun grumeaux.<br>
-              Ajouter ensuite le beurre fondu au reste de la préparation puis bien mélanger.<br>
-              Ajouter les arômes : le rhum et la vanille.<br>
+            <p class="preparation">
+              Dans un saladier à l'aide d'une cuillère en bois ou dans le bol
+              d'un robot, mélanger la farine avec le sucre puis ajouter les
+              oeufs progressivement un à un.<br />
+              Ajouter le lait petit à petit en mélangeant et veillant à ne
+              laisser aucun grumeaux.<br />
+              Ajouter ensuite le beurre fondu au reste de la préparation puis
+              bien mélanger.<br />
+              Ajouter les arômes : le rhum et la vanille.<br />
               Dans une poêle bien chaude, faites sauter vos crèpes.
             </p>
           </div>
         </article>
         <article>
-          <header class="header_article">
-            <div class="tete_article">
-              <h2>Crèpes véganes</h2>
+          <h2>Crèpes véganes</h2>
 
-
-            </div>
-          </header>
           <div class="contenu_article">
-            <div class="ingredients_contenair">
-              <div class="img_ing"><img src="./images/crepes_vegane.png" alt="recette de crepes vegane"></div>
+            <div class="header_article">
+              <div class="img_container">
+                <img src="./images/crepes_vegane.png" alt="recette de crepes vegane" />
+              </div>
               <div class="ingredients">
                 <p><strong>Ingrédients</strong></p>
                 <p>Pour 12 crèpes environ</p>
@@ -97,38 +98,40 @@
               </div>
             </div>
             <h3>Préparation</h3>
-            <p class="preparation">Pâte à crêpes :
-              Mets la farine, la fécule, le sucre, le sucre vanillé et la pincée de sel dans un
-              saladier
-              et mélange tout.<br> Verse le lait de soja progressivement en mélangeant rapidement avec un fouet. <br>
-              Dès que ta pâte est liquide, ajoute le rhum ou l'eau de fleur d'oranger et la cuillère à soupe d'huile.
-              <br>Tu peux
-              ajouter un peu d'eau pour rendre la texture vraiment fluide.
-              Si tu as un peu de temps, laisse ta pâte reposer une heure environ.
-              Fais chauffer ta poêle légèrement huilée à feu vif.<br> Verse une louche de pâte et recouvre la poêle
-              avec.<br> Décolle la crêpe avec une spatule en vérifiant qu'elle soit suffisamment dorée. <br>Pour les
-              autres
-              crêpes, fais les cuire sur feu moyen.
+            <p class="preparation">
+              Pâte à crêpes : Mets la farine, la fécule, le sucre, le sucre
+              vanillé et la pincée de sel dans un saladier et mélange tout.<br />
+              Verse le lait de soja progressivement en mélangeant rapidement
+              avec un fouet. <br />
+              Dès que ta pâte est liquide, ajoute le rhum ou l'eau de fleur
+              d'oranger et la cuillère à soupe d'huile.
+              <br />Tu peux ajouter un peu d'eau pour rendre la texture
+              vraiment fluide. Si tu as un peu de temps, laisse ta pâte
+              reposer une heure environ. Fais chauffer ta poêle légèrement
+              huilée à feu vif.<br />
+              Verse une louche de pâte et recouvre la poêle avec.<br />
+              Décolle la crêpe avec une spatule en vérifiant qu'elle soit
+              suffisamment dorée. <br />Pour les autres crêpes, fais les cuire
+              sur feu moyen.
             </p>
           </div>
         </article>
         <article>
-          <header class="header_article">
-            <div class="tete_article">
-              <h2>Crèpes sans gluten</h2>
+          <h2>Crèpes sans gluten</h2>
 
-
-            </div>
-          </header>
           <div class="contenu_article">
-            <div class="ingredients_contenair">
-              <div class="img_ing"><img src="./images/crepes_sans_gluten.png" alt="recette de crepes sans gluten"></div>
+            <div class="header_article">
+              <!-- div img_container pour englober le bloc image et pouvoir l'aligner avec bloc ingredients via div parent -->
+              <div class="img_container">
+                <img src="./images/crepes_sans_gluten.png" alt="recette de crepes sans gluten" />
+              </div>
+
               <div class="ingredients">
                 <p><strong>Ingrédients</strong></p>
                 <p>Pour 16 crèpes environ</p>
                 <ul>
                   <li>110 g de Fécule de maïs</li>
-                  <li>500 ml de lait </li>
+                  <li>500 ml de lait</li>
                   <li>90 g farine de riz</li>
                   <li>2 Oeufs</li>
                   <li>30 g de beurre</li>
@@ -139,90 +142,131 @@
               </div>
             </div>
             <h3>Préparation</h3>
-            <p class="preparation"> Fouettez les oeufs avec l'huile puis incorporez la farine, la Maïzena et le Rhum.
-              Délayez avec le lait et mélangez bien jusqu'à l'obtention d'une pâte lisse.<br>
-              Si des grumeaux se forment, mixez la pâte quelques minutes.<br>
-              Laissez reposer au moins 1 heure.<br>
-              Chauffez une poêle ou une crêpière et déposez-y une noix de beurre. Dès qu'il a fondu, versez une louche
-              de
-              pâte et étalez-la uniformément sur la surface de cuisson afin de former une belle crêpe.<br>
-              Dès que la crêpe commence à sécher (1 minute maximum), retournez-la en la faisant sauter ou plus
-              simplement
-              à
-              la spatule.<br>
-              Une fois retournée, saupoudrez la crêpe d'un peu de sucre et passez un petit morceau de beurre sur la
-              surface
-              pour éviter que la crêpe ne soit trop sèche..</p>
+            <p class="preparation">
+              Fouettez les oeufs avec l'huile puis incorporez la farine, la
+              Maïzena et le Rhum. Délayez avec le lait et mélangez bien
+              jusqu'à l'obtention d'une pâte lisse.<br />
+              Si des grumeaux se forment, mixez la pâte quelques minutes.<br />
+              Laissez reposer au moins 1 heure.<br />
+              Chauffez une poêle ou une crêpière et déposez-y une noix de
+              beurre. Dès qu'il a fondu, versez une louche de pâte et
+              étalez-la uniformément sur la surface de cuisson afin de former
+              une belle crêpe.<br />
+              Dès que la crêpe commence à sécher (1 minute maximum),
+              retournez-la en la faisant sauter ou plus simplement à la
+              spatule.<br />
+              Une fois retournée, saupoudrez la crêpe d'un peu de sucre et
+              passez un petit morceau de beurre sur la surface pour éviter que
+              la crêpe ne soit trop sèche..
+            </p>
           </div>
         </article>
       </div>
       <!-- aside -->
       <aside>
         <h2><strong>Le saviez-vous?</strong></h2>
-        <p><span class="iconify" data-icon="gis:earth-euro-africa"></span> Les historiens établissent l’origine
-          de la
-          crêpe à 7000 avant Jésus Christ. A
-          cette époque, il s’agissait
-          d’une galette assez épaisse, réalisée avec une pâte mêlant de l’eau et diverses céréales écrasées. Une pierre
-          plate, bien chaude, permettait la cuisson.</p>
-        <p><span class="iconify" data-icon="openmoji:bretagne-flag"></span> En Bretagne, c’est au XIIIe siècle que la
-          crêpe a fait son apparition. Le sarrasin, rapporté en France après
-          les croisades en Asie, a permis de confectionner cette fine couche de pâte, de forme ronde. C’est le début de
-          la galette bretonne ! Car nos crêpes salées sont toujours préparées avec de la farine de sarrasin, aussi
-          appelée farine de blé noir. L’avantage de cette farine est d’être sans gluten.<br>
-          En breton le mot Crêpe se dit « Krampouez »</p>
-        <p><span class="iconify" data-icon="openmoji:bretagne-flag"></span>
-          Pourquoi les Bretons mangent des crêpes ?
-          C'était le plat du pauvre. Ce sont les Hollandais qui ont introduit le blé noir en Bretagne. La graine était
-          transformée en farine, ce qui permettait de nourrir toute la famille. Au moins une fois par semaine, on
-          fabriquait des crêpes ou galettes sur une poêle ou une billig.
+        <p>
+          <span class="iconify" data-icon="gis:earth-euro-africa"></span> Les
+          historiens établissent l’origine de la crêpe à 7000 avant Jésus
+          Christ. A cette époque, il s’agissait d’une galette assez épaisse,
+          réalisée avec une pâte mêlant de l’eau et diverses céréales
+          écrasées. Une pierre plate, bien chaude, permettait la cuisson.
         </p>
-        <p><span class="iconify" data-icon="fa6-solid:wheat-awn-circle-exclamation"></span> Quelle farine pour les
-          crêpes salées ?
-          La farine de blé s'utilise généralement pour confectionner des crêpes sucrées, et la farine de sarrasin pour
-          des galettes salées.</p>
-
-        <p><span class="iconify" data-icon="subway:calendar-2"></span> Chandeleur :<br>
-          Le 2 février, c’est la Chandeleur, appelée aussi la Fête des Chandelles. Tous les ans, la tradition veut que
-          l’on cuisine plein de délicieuses crêpes à déguster en famille ou entre amis. Chacun doit faire sauter sa
-          crêpe
-          au-dessus du feu. Si elle se retourne convenablement on est assuré d’avoir richesse et chance toute l’année.
+        <p>
+          <span class="iconify" data-icon="openmoji:bretagne-flag"></span> En
+          Bretagne, c’est au XIIIe siècle que la crêpe a fait son apparition.
+          Le sarrasin, rapporté en France après les croisades en Asie, a
+          permis de confectionner cette fine couche de pâte, de forme ronde.
+          C’est le début de la galette bretonne ! Car nos crêpes salées sont
+          toujours préparées avec de la farine de sarrasin, aussi appelée
+          farine de blé noir. L’avantage de cette farine est d’être sans
+          gluten.<br />
+          En breton le mot Crêpe se dit « Krampouez »
         </p>
-        <p><span class="iconify" data-icon="wpf:ask-question"></span> Qui a inventé la Chandeleur ?
-          L'origine de la chandeleur la plus connue remonte effectivement aux Parentalia romaines. C'était une fête
-          annuelle en l'honneur des morts, au cours de laquelle les romains veillaient à l'aide de cierges et de
-          torches, en honorant Pluton et les dieux. On relie aussi la Chandeleur au dieu Pan.</p>
+        <p>
+          <span class="iconify" data-icon="openmoji:bretagne-flag"></span>
+          Pourquoi les Bretons mangent des crêpes ? C'était le plat du pauvre.
+          Ce sont les Hollandais qui ont introduit le blé noir en Bretagne. La
+          graine était transformée en farine, ce qui permettait de nourrir
+          toute la famille. Au moins une fois par semaine, on fabriquait des
+          crêpes ou galettes sur une poêle ou une billig.
+        </p>
+        <p>
+          <span class="iconify" data-icon="fa6-solid:wheat-awn-circle-exclamation"></span>
+          Quelle farine pour les crêpes salées ? La farine de blé s'utilise
+          généralement pour confectionner des crêpes sucrées, et la farine de
+          sarrasin pour des galettes salées.
+        </p>
 
-        <p><span class="iconify" data-icon="emojione-monotone:pancakes"></span> Comment s'appelle la dernière crêpe ?
-          Galichon
-          La crêpe du chat ou galichon est la toute dernière crêpe. Comme on utilise le reste de pâte pour la faire,
-          elle est petite, avec une forme irrégulière.</p>
-        <p><span class="iconify" data-icon="emojione-monotone:pancakes"></span> Les pancakes, que l'on peut traduire
-          littéralement par "gâteaux à la poêle", sont des crêpes épaisses très
-          appréciées des Nord-Américains. Les premières galettes sont citées dans un livre de recette The British
-          housewife en 1615, attribuant ainsi l'origine des pancakes aux britanniques</p>
-        <p><span class="iconify" data-icon="medical-icon:i-nutrition"></span> Une composition équilibrée
-          Une crêpe se compose d'œufs, de farine, de lait, d'un peu de levure et de beurre pour la cuisson. Elle fournit
-          donc des glucides, sources d'énergie pour l'organisme, des protéines utiles aux muscles, des lipides qui sont
-          des carburants pour notre corps, et du calcium.</p>
-        <p><span class="iconify" data-icon="fa-brands:nutritionix"></span> Un apport calorique raisonnable
-          Une crêpe pèse environ 20 g, soit un apport moyen de 60 calories. Sans compter qu'elles sont rapides à faire
-          et peu onéreuses !</p>
-        <p><span class="iconify" data-icon="material-symbols:more-time-rounded"></span> Un bon pouvoir de satiété
-          Par sa composition, la crêpe rassasie rapidement et longtemps. On estime son pouvoir de satiété à 4,8 sur une
-          échelle de 5. Les crêpes à base de farine de sarrasin, plus riches en glucides complexe et en fibres sont
-          particulièrement rassasiantes. </p>
-        <p><img src="./images/vive-crepes.jpg" alt="crepe en l'air"></p>
+        <p>
+          <span class="iconify" data-icon="subway:calendar-2"></span>
+          Chandeleur :<br />
+          Le 2 février, c’est la Chandeleur, appelée aussi la Fête des
+          Chandelles. Tous les ans, la tradition veut que l’on cuisine plein
+          de délicieuses crêpes à déguster en famille ou entre amis. Chacun
+          doit faire sauter sa crêpe au-dessus du feu. Si elle se retourne
+          convenablement on est assuré d’avoir richesse et chance toute
+          l’année.
+        </p>
+        <p>
+          <span class="iconify" data-icon="wpf:ask-question"></span> Qui a
+          inventé la Chandeleur ? L'origine de la chandeleur la plus connue
+          remonte effectivement aux Parentalia romaines. C'était une fête
+          annuelle en l'honneur des morts, au cours de laquelle les romains
+          veillaient à l'aide de cierges et de torches, en honorant Pluton et
+          les dieux. On relie aussi la Chandeleur au dieu Pan.
+        </p>
 
+        <p>
+          <span class="iconify" data-icon="emojione-monotone:pancakes"></span>
+          Comment s'appelle la dernière crêpe ? Galichon La crêpe du chat ou
+          galichon est la toute dernière crêpe. Comme on utilise le reste de
+          pâte pour la faire, elle est petite, avec une forme irrégulière.
+        </p>
+        <p>
+          <span class="iconify" data-icon="emojione-monotone:pancakes"></span>
+          Les pancakes, que l'on peut traduire littéralement par "gâteaux à la
+          poêle", sont des crêpes épaisses très appréciées des
+          Nord-Américains. Les premières galettes sont citées dans un livre de
+          recette The British housewife en 1615, attribuant ainsi l'origine
+          des pancakes aux britanniques
+        </p>
+        <p>
+          <span class="iconify" data-icon="medical-icon:i-nutrition"></span>
+          Une composition équilibrée Une crêpe se compose d'œufs, de farine,
+          de lait, d'un peu de levure et de beurre pour la cuisson. Elle
+          fournit donc des glucides, sources d'énergie pour l'organisme, des
+          protéines utiles aux muscles, des lipides qui sont des carburants
+          pour notre corps, et du calcium.
+        </p>
+        <p>
+          <span class="iconify" data-icon="fa-brands:nutritionix"></span> Un
+          apport calorique raisonnable Une crêpe pèse environ 20 g, soit un
+          apport moyen de 60 calories. Sans compter qu'elles sont rapides à
+          faire et peu onéreuses !
+        </p>
+        <p>
+          <span class="iconify" data-icon="material-symbols:more-time-rounded"></span>
+          Un bon pouvoir de satiété Par sa composition, la crêpe rassasie
+          rapidement et longtemps. On estime son pouvoir de satiété à 4,8 sur
+          une échelle de 5. Les crêpes à base de farine de sarrasin, plus
+          riches en glucides complexe et en fibres sont particulièrement
+          rassasiantes.
+        </p>
+        <p><img src="./images/vive-crepes.jpg" alt="crepe en l'air" /></p>
       </aside>
-    </div>
-    <div id="outils">
-      <h2 id="aide">Aide mémoire</h2>
-      <div id="outils_div">
+    </section>
+    <!-----------------section aides memoire------------------------------------>
+
+    <section id="bloc_aides">
+      <h2>Aide mémoire</h2>
+      <div id="aides_memoire">
         <div id="tableau_gluten">
           <p>Liste des farine avec et sans gluten</p>
           <table>
-            <caption>Liste des farines</caption>
+            <caption>
+              Liste des farines
+            </caption>
             <tr>
               <th>Avec Gluten</th>
               <th>Sans Gluten</th>
@@ -247,23 +291,21 @@
               <td>Orge</td>
               <td>Riz</td>
             </tr>
-
           </table>
         </div>
         <div id="video">
-          <p>Comment faire la pâte a crêpes?</p>
+          <p>Comment faire la pâte à crêpes?</p>
+          <!--correction du framebroder obsolete par style="border:0"-->
           <iframe width="300" height="180" src="https://www.youtube.com/embed/7ODX4iOm6ao" title="YouTube video player"
             style="border: 0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-
         </div>
       </div>
-    </div>
+    </section>
 
-
-    <!-- formulaire -->
-    <section id="form">
+    <!-------------------- section formulaire -------------------->
+    <section id="section_form">
       <h2 id="contact">Me contacter</h2>
 
       <div id="formulaire">
@@ -276,6 +318,7 @@
               <option value="masculin">Monsieur</option>
             </select>
             <label for="nom">Votre Nom :</label>
+            <!---Utilisation du champs requis  -->
             <input type="text" name="nom" id="nom" required />
             <br />
             <label for="question">Votre question :</label>
@@ -283,34 +326,37 @@
             <label for="mail">Entrez votre e-mail</label>
             <input type="email" name="mail" id="mail" required />
             <input type="submit" value="Envoyer" />
-
           </fieldset>
         </form>
       </div>
-
     </section>
-    <!-- footer -->
+    <!---------------------- footer --------------------------->
     <footer>
-      <div id="contenair_footer">
+      <div id="container_footer">
         <div id="footer">
+          <p>Site réalisé par NJ_Web 2022</p>
           <p>
-            Site réalisé par NJ_Web 2022
-          </p>
-          <p><a class="a-icone" href="#" target="_blank"><span class="iconify"
+            <a class="a-icone" href="#" target="_blank"><span class="iconify"
                 data-icon="akar-icons:facebook-fill"></span>
-            </a></p>
-          <p><a class="a-icone" href="https://www.linkedin.com/in/angie-pons-1078431aa/" target="_blank"><span
+            </a>
+          </p>
+          <p>
+            <a class="a-icone" href="https://www.linkedin.com/in/angie-pons-1078431aa/" target="_blank"><span
                 class="iconify" data-icon="akar-icons:linkedin-box-fill"></span>
-            </a></p>
-
+            </a>
+          </p>
         </div>
-        <div id="footer_autres">
-
-          <p><a href="https://elishaya13.github.io/SiteMaquillageResponsive/" target="_blank"><span class="iconify"
-                data-icon="icon-park-solid:other"></span> Maquillage de
-              fête en Vendée</a></p>
-          <p><a href="https://elishaya13.github.io/ExositeFF14/" target="_blank"><span class="iconify"
-                data-icon="icon-park-solid:other"></span> Evénements sur scène FFXIV</a></p>
+        <div id="footer_sites">
+          <p>
+            <a href="https://elishaya13.github.io/SiteMaquillageResponsive/" target="_blank"><span class="iconify"
+                data-icon="icon-park-solid:other"></span>
+              Maquillage de fête en Vendée</a>
+          </p>
+          <p>
+            <a href="https://elishaya13.github.io/ExositeFF14/" target="_blank"><span class="iconify"
+                data-icon="icon-park-solid:other"></span>
+              Evénements sur scène FFXIV</a>
+          </p>
         </div>
       </div>
     </footer>
